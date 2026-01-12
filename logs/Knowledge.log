@@ -1,0 +1,149 @@
+2026-01-12 18:00:11,362 - Knowledge - INFO - Created shared MongoDB connection pool
+2026-01-12 18:00:11,363 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2026-01-12 18:00:11,363 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2026-01-12 18:00:11,364 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=10, max_concurrent_llm_calls=50
+2026-01-12 18:00:11,364 - Knowledge - INFO - 📊 Performance monitoring enabled (reporting every 60s)
+2026-01-12 18:00:12,410 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-01-12 18:00:12,411 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2026-01-12 18:00:12,411 - Knowledge - INFO - load persisted knowledge: begin
+2026-01-12 18:00:12,411 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2026-01-12 18:00:12,411 - Knowledge - INFO - load persisted knowledge: end
+2026-01-12 18:00:12,411 - Knowledge - WARNING - No persisted knowledge found. Files will be queued during start()
+2026-01-12 18:00:12,411 - Knowledge - INFO - Redis support added with prefix knowledge:b49770e:
+2026-01-12 18:00:12,413 - Knowledge - INFO - Starting knowledge initialization for ID: xu3brt-b49770e
+2026-01-12 18:00:12,413 - Knowledge - INFO - 🔍 Checking Redis for build_id: b49770e
+2026-01-12 18:00:12,413 - Knowledge - INFO - 🔍 Full session ID: xu3brt-b49770e
+2026-01-12 18:00:12,413 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b49770e:
+2026-01-12 18:00:12,413 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2026-01-12 18:00:12,413 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-01-12 18:00:12,413 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b49770e
+2026-01-12 18:00:12,712 - Knowledge - WARNING - ❌ No Redis cache found
+2026-01-12 18:00:12,712 - Knowledge - INFO - 📁 Loading knowledge from disk...
+2026-01-12 18:00:12,730 - Knowledge - INFO - load persisted docinfo: begin
+2026-01-12 18:00:12,730 - Knowledge - INFO - load persisted docinfo: end
+2026-01-12 18:00:12,730 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-01-12 18:00:12,730 - Knowledge - INFO - ✅ load_from_redis method found - attempting Redis load
+2026-01-12 18:00:12,730 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-01-12 18:00:12,730 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b49770e
+2026-01-12 18:00:12,731 - Knowledge - WARNING - ❌ No Redis cache found
+2026-01-12 18:00:12,731 - Knowledge - INFO - ❌ Redis load returned False - falling back to file loading
+2026-01-12 18:00:12,731 - Knowledge - INFO - load persisted knowledge: begin
+2026-01-12 18:00:12,731 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2026-01-12 18:00:12,731 - Knowledge - INFO - load persisted knowledge: end
+2026-01-12 18:00:12,732 - Knowledge - INFO - 📁 Disk load complete in 0.02s
+2026-01-12 18:00:12,732 - Knowledge - INFO - Populating ingest queue with source files...
+2026-01-12 18:00:12,732 - Knowledge - INFO - Scanning path: /Users/veera/Documents/kavia-backend/graphnode-backend-api/data/rdk7542/7729/b49770e/middleware-manifest-rdke-7729
+2026-01-12 18:00:12,732 - Knowledge - INFO - Found 5 files in /Users/veera/Documents/kavia-backend/graphnode-backend-api/data/rdk7542/7729/b49770e/middleware-manifest-rdke-7729
+2026-01-12 18:00:12,732 - Knowledge - INFO - Added 5 total files from 1 path(s) to ingest queue
+2026-01-12 18:00:12,732 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 243, Duration: 0ms
+2026-01-12 18:00:12,733 - Knowledge - INFO - Worker kw1 created using shared MongoDB connection pool
+2026-01-12 18:00:12,733 - Knowledge - INFO - knowledge worker kw1 start
+2026-01-12 18:00:12,733 - Knowledge - INFO - Worker kw2 created using shared MongoDB connection pool
+2026-01-12 18:00:12,733 - Knowledge - INFO - [kw1] Queue=5, InProgress=0, PendingWorkers=0/1, Completed=0/5 (0.0%)
+2026-01-12 18:00:12,733 - Knowledge - INFO - knowledge worker kw2 start
+2026-01-12 18:00:12,733 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=5, active_workers=0/1
+2026-01-12 18:00:12,733 - Knowledge - INFO - Worker kw3 created using shared MongoDB connection pool
+2026-01-12 18:00:12,733 - Knowledge - INFO - [kw2] Queue=1, InProgress=0, PendingWorkers=1/2, Completed=0/5 (0.0%)
+2026-01-12 18:00:12,733 - Knowledge - INFO - knowledge worker kw3 start
+2026-01-12 18:00:12,733 - Knowledge - INFO - Batch sizing: calculated=1, max_allowed=10, queue=1, active_workers=1/2
+2026-01-12 18:00:12,733 - Knowledge - INFO - Worker kw4 created using shared MongoDB connection pool
+2026-01-12 18:00:12,734 - Knowledge - INFO - [kw3] Queue=1, InProgress=0, PendingWorkers=1/3, Completed=0/5 (0.0%)
+2026-01-12 18:00:12,734 - Knowledge - INFO - knowledge worker kw4 start
+2026-01-12 18:00:12,734 - Knowledge - INFO - Batch sizing: calculated=1, max_allowed=10, queue=1, active_workers=2/3
+2026-01-12 18:00:12,734 - Knowledge - INFO - Worker kw5 created using shared MongoDB connection pool
+2026-01-12 18:00:12,734 - Knowledge - INFO - ⏱️  Actual file processing started (first file processed)
+2026-01-12 18:00:12,734 - Knowledge - INFO - knowledge worker kw5 start
+2026-01-12 18:00:12,734 - Knowledge - INFO - 🚀 Started 5 worker threads for KG build
+2026-01-12 18:00:12,734 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 158, Duration: 0ms
+2026-01-12 18:00:12,734 - Knowledge - INFO - 📈 Monitoring: Total files=5, Queue length=0
+2026-01-12 18:00:12,740 - Knowledge - INFO - Processing batch of 1 files
+2026-01-12 18:00:12,740 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 6ms
+2026-01-12 18:00:12,740 - Knowledge - INFO - process ingested knowledge for /Users/veera/Documents/kavia-backend/graphnode-backend-api/data/rdk7542/7729/b49770e/middleware-manifest-rdke-7729/CONTRIBUTING.md
+2026-01-12 18:00:12,741 - Knowledge - INFO - Progress: 20.0% | Files: 5/5 | Rate: 3.04 files/sec | Queue: 0
+2026-01-12 18:00:12,747 - Knowledge - INFO - Processing batch of 4 files
+2026-01-12 18:00:12,747 - Knowledge - INFO - process ingested knowledge for /Users/veera/Documents/kavia-backend/graphnode-backend-api/data/rdk7542/7729/b49770e/middleware-manifest-rdke-7729/raspberrypi4-64.xml
+2026-01-12 18:00:12,814 - Knowledge - INFO - process ingested knowledge for /Users/veera/Documents/kavia-backend/graphnode-backend-api/data/rdk7542/7729/b49770e/middleware-manifest-rdke-7729/CHANGELOG.md
+2026-01-12 18:00:12,815 - Knowledge - INFO - process ingested knowledge for /Users/veera/Documents/kavia-backend/graphnode-backend-api/data/rdk7542/7729/b49770e/middleware-manifest-rdke-7729/rdke-middleware.xml
+2026-01-12 18:00:12,822 - Knowledge - INFO - process ingested knowledge for /Users/veera/Documents/kavia-backend/graphnode-backend-api/data/rdk7542/7729/b49770e/middleware-manifest-rdke-7729/README.md
+2026-01-12 18:00:13,033 - Knowledge - INFO - Knowledge creation complete
+2026-01-12 18:00:13,034 - Knowledge - INFO - ==================================================
+2026-01-12 18:00:13,034 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2026-01-12 18:00:13,034 - Knowledge - INFO - ==================================================
+2026-01-12 18:00:13,034 - Knowledge - INFO - Total processing time: 1.92 seconds (0.03 minutes)
+2026-01-12 18:00:13,034 - Knowledge - INFO - Files processed: 0
+2026-01-12 18:00:13,034 - Knowledge - INFO - Processing rate: 0.00 files/second
+2026-01-12 18:00:13,034 - Knowledge - INFO - 
+[TIME_BREAKDOWN]
+2026-01-12 18:00:13,034 - Knowledge - INFO - File Reading: 0.00s (0.0%)
+2026-01-12 18:00:13,034 - Knowledge - INFO - LLM Processing: 0.00s (0.0%)
+2026-01-12 18:00:13,034 - Knowledge - INFO - MongoDB Operations: 0.00s (0.0%)
+2026-01-12 18:00:13,034 - Knowledge - INFO - Redis Operations: 0.00s (0.0%)
+2026-01-12 18:00:13,034 - Knowledge - INFO - WebSocket Communication: 0.01s (0.3%)
+2026-01-12 18:00:13,034 - Knowledge - INFO - Other Overhead: 1.92s (99.7%)
+2026-01-12 18:00:13,034 - Knowledge - INFO - 
+[LLM_STATS]
+2026-01-12 18:00:13,034 - Knowledge - INFO - Total LLM calls: 0
+2026-01-12 18:00:13,034 - Knowledge - INFO - Average LLM response time: 0ms
+2026-01-12 18:00:13,034 - Knowledge - INFO - Average prompt tokens: 0.0
+2026-01-12 18:00:13,034 - Knowledge - INFO - Average completion tokens: 0.0
+2026-01-12 18:00:13,034 - Knowledge - INFO - Total prompt tokens: 0
+2026-01-12 18:00:13,034 - Knowledge - INFO - Total completion tokens: 0
+2026-01-12 18:00:13,034 - Knowledge - INFO - Total LLM cost: $0.0000
+2026-01-12 18:00:13,035 - Knowledge - INFO - 
+[DATABASE_STATS]
+2026-01-12 18:00:13,035 - Knowledge - INFO - MongoDB operations: 0
+2026-01-12 18:00:13,035 - Knowledge - INFO - Redis operations: 0
+2026-01-12 18:00:13,035 - Knowledge - INFO - 
+[COMMUNICATION_STATS]
+2026-01-12 18:00:13,035 - Knowledge - INFO - WebSocket messages sent: 3
+2026-01-12 18:00:13,035 - Knowledge - INFO - Average message size: 133.7 bytes
+2026-01-12 18:00:13,035 - Knowledge - INFO - 
+[WORKER_STATS]
+2026-01-12 18:00:13,035 - Knowledge - INFO - 
+[FILE_TYPE_STATS]
+2026-01-12 18:00:13,035 - Knowledge - INFO - 
+[SLOWEST_FILES]
+2026-01-12 18:00:13,035 - Knowledge - INFO - ==================================================
+2026-01-12 18:00:13,035 - Knowledge - INFO - ================================================================================
+2026-01-12 18:00:13,035 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-01-12 18:00:13,035 - Knowledge - INFO - ================================================================================
+2026-01-12 18:00:13,035 - Knowledge - INFO - ⏱️  Elapsed Time: 1.7s (0.0 min)
+2026-01-12 18:00:13,035 - Knowledge - INFO - 📁 Files: 5 processed, 5 skipped LLM, 0 LLM processed
+2026-01-12 18:00:13,035 - Knowledge - INFO - ⚡ Throughput: 2.99 files/sec
+2026-01-12 18:00:13,035 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-01-12 18:00:13,035 - Knowledge - INFO - 
+2026-01-12 18:00:13,035 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-01-12 18:00:13,035 - Knowledge - INFO -    Call time: avg=0.000s, max=0.000s, total=0.0s
+2026-01-12 18:00:13,035 - Knowledge - INFO - 
+2026-01-12 18:00:13,035 - Knowledge - INFO - 💾 I/O Metrics:
+2026-01-12 18:00:13,035 - Knowledge - INFO -    File I/O: avg=0.000s, total=0.0s
+2026-01-12 18:00:13,035 - Knowledge - INFO - 
+2026-01-12 18:00:13,035 - Knowledge - INFO - 🔄 Batch Processing:
+2026-01-12 18:00:13,036 - Knowledge - INFO -    Batches: 2, avg_time=0.00s, avg_throughput=3672.19 files/sec
+2026-01-12 18:00:13,036 - Knowledge - INFO - 
+2026-01-12 18:00:13,036 - Knowledge - INFO - 👷 Worker Utilization:
+2026-01-12 18:00:13,036 - Knowledge - INFO -    kw5: 87.5% active (active=0.3s, idle=0.0s)
+2026-01-12 18:00:13,036 - Knowledge - INFO -    kw4: 84.3% active (active=0.3s, idle=0.0s)
+2026-01-12 18:00:13,036 - Knowledge - INFO -    kw3: 37.8% active (active=0.1s, idle=0.2s)
+2026-01-12 18:00:13,036 - Knowledge - INFO -    kw2: 63.3% active (active=0.2s, idle=0.1s)
+2026-01-12 18:00:13,036 - Knowledge - INFO -    kw1: 100.0% active (active=0.3s, idle=0.0s)
+2026-01-12 18:00:13,036 - Knowledge - INFO - 
+2026-01-12 18:00:13,036 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-01-12 18:00:13,036 - Knowledge - INFO -    ✅ No significant bottlenecks detected
+2026-01-12 18:00:13,036 - Knowledge - INFO - ================================================================================
+2026-01-12 18:00:13,036 - Knowledge - INFO - ==================================================
+2026-01-12 18:00:13,036 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2026-01-12 18:00:13,036 - Knowledge - INFO - ==================================================
+2026-01-12 18:00:13,036 - Knowledge - INFO - Total processing time: 1.95 seconds (0.03 minutes)
+2026-01-12 18:00:13,036 - Knowledge - INFO - Files processed: 5 of 5
+2026-01-12 18:00:13,036 - Knowledge - INFO - Processing rate: 2.57 files/second
+2026-01-12 18:00:13,036 - Knowledge - INFO - WebSocket messages sent: 1
+2026-01-12 18:00:13,036 - Knowledge - INFO - MongoDB operations: 5
+2026-01-12 18:00:13,036 - Knowledge - INFO - Average MongoDB ops per file: 1.00
+2026-01-12 18:00:13,036 - Knowledge - INFO - LLM costs: $0.0000
+2026-01-12 18:00:13,036 - Knowledge - INFO - Prompt tokens: 0
+2026-01-12 18:00:13,036 - Knowledge - INFO - Completion tokens: 0
+2026-01-12 18:00:13,037 - Knowledge - INFO - Updating org costs, total cost: 0
+2026-01-12 18:00:20,926 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 158, Duration: 0ms
+2026-01-12 18:00:43,782 - Knowledge - INFO - Saving knowledge to Redis...
+2026-01-12 18:00:43,795 - Knowledge - INFO - Knowledge saved to Redis successfully
